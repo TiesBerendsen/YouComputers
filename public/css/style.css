@@ -1,0 +1,780 @@
+/* body */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+/* header */
+.bovennav a h1 {
+    text-shadow: 2px 2px crimson;
+    transition: 0.2s;
+    margin-left: 30px;
+}.bovennav a h1:hover {
+    color: crimson;
+    text-shadow: 2px 2px #1f1e1e;
+    transition: 0.15s;
+} #span{
+    text-shadow: 2px 2px #1f1e1e;
+    transition: 0.2s;
+} .bovennav a h1:hover #span{
+    color: #1f1e1e;
+    transition: 0.15s;
+    text-shadow: 2px 2px crimson;
+} .ondernav ul li a:hover {
+    text-shadow: 2px 2px crimson;
+    transition: 0.2s;
+} .bovennav a img:hover {
+    filter: drop-shadow(2px 2px 2px crimson);
+    transition: 0.1s;
+} .hamburgerout ul li:hover{
+    text-shadow: 2px 2px crimson;
+    transition: 0.2s;
+} .hamburger {
+    width: 20px;
+    filter: invert(100%);
+    transition: 0.2s;
+} .accountout a {
+    text-decoration: none;
+    color: #404040;
+    text-align: center;
+} .accountout {
+    display: none;
+    margin-top: 50px;
+    width: 200px;
+    position: absolute;
+    background-color: white;
+} .accountout a:hover {
+    text-shadow: 2px 2px lightgrey;
+    transition: 0.2s;
+}
+
+/* header media */
+@media screen and (min-width: 1307px){
+    .bovennav {
+        height: 108px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    } .bovennav a {
+      text-decoration: none; 
+      color: #1f1e1e;
+      font-size: 30px;
+      font-weight: bold;
+    } .bovennav a span {
+        color: crimson;
+    } .bovennav table td img {
+        width: 30px;
+    } .bovennav table td a {
+        font-size: 12px;
+    } .hamburger {
+        display: none;
+    } .ondernav {
+        width: 100%;
+        height: 60px;
+        background-color: #404040;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        align-content: space-around;
+    } .ondernav ul {
+        list-style: none;
+    } .ondernav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        margin: 20px;
+        font-size: 15px;
+    }  .navhamburger {
+        display: none;
+    } .accountout a {
+        font-size: 20px;
+    }
+
+    
+
+    
+}
+
+@media screen and (max-width: 1306px) {
+    .bovennav {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #404040;
+    } .bovennav a {
+      text-decoration: none; 
+      color: #1f1e1e;
+      font-size: 16px;
+      font-weight: bold;
+    } .bovennav a span {
+        color: crimson;
+    } .bovennav table td img {
+        width: 20px;
+        filter: invert(100%);
+    } .hamburger {
+        width: 20px;
+        
+        filter: invert(100%);
+    } .ondernav {
+        display: none;
+    } .bovennav a h1 {
+        text-shadow: 1px 1px crimson;
+        transition: 0.2s;
+    } .bovennav a h1:hover #span{
+        color: #1f1e1e;
+        transition: 0.15s;
+        text-shadow: 1px 1px crimson;
+    } .accountout {
+        margin-top: 40px;
+        margin-left:-92px ;
+        width: 175px;
+        position: absolute;
+        background-color: #404040;
+    } .accountout ul {
+        list-style-type: none;
+    } .accountout a:hover {
+        text-shadow: 2px 2px crimson;
+        transition: 0.2s;
+    } .accountout a {
+        color: white;
+    }
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: #404040;
+    display: flex;
+} footer .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 33%;
+} footer .links ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}  footer .links a {
+    color: white;
+    font-weight: bold;
+} footer .midden {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 34%;
+} footer .midden ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}  footer .midden a {
+    color: white;
+    font-weight: bold;
+} footer .rechts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 33%;
+} footer .rechts ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}  footer .rechts a {
+    color: white;
+    font-weight: bold;
+}
+
+
+
+/* hamburger */
+
+.hamburgerout {
+    background-color: #404040;
+    max-width: 200px;
+    width: 50%;
+    display: none;
+    justify-content: center;
+    align-items: flex-start; 
+    border-radius: 1px;
+    position: absolute;
+} .hamburgerout ul {
+    list-style: none;
+} .hamburgerout ul li a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+} 
+
+/* home */
+
+article {
+    width: 100%;
+    height: 300px;
+    background-image: url("../images/samenstellenintro.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+    text-shadow: 2px 2px #1f1e1e;
+} article div {
+    max-width: 300px;
+    height: 300px;
+} .articletitel {
+    font-size: 20px;
+} .samenstelknop {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: lightcoral;
+    text-decoration: none;
+    color: white;   
+    text-shadow: 1px 2px #1f1e1e;
+} .samenstelknop:hover {
+    box-shadow: 6px 6px #1f1e1e;
+    background-color: rgb(228, 100, 100);
+    transition: 0.2s;
+} article div nav {
+    text-align: center;
+} article .articleImage1 {
+    width: 250px;
+    background-image: url("../images/HomeComputer1.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+} article .articleImage2 {
+    width: 250px;
+    background-image: url("../images/HomeLaptop.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+} section {
+    width: 100%;
+    height: auto;
+    /* background-color: lightcoral; */
+} section .content {
+    font-weight: bold;
+    max-width: 1200px;
+    /* background-color: aquamarine; */
+    height: auto;
+    margin: 0 auto;
+    color: #1f1e1e;
+}
+/* .gamepcs wordt ook gebruikt bij de andere classes */
+section .content .gamepcs {
+    height: 400px;
+    max-width: 1200px; 
+} section .content .gamepc {
+    padding: 10px;
+    flex: 0 0 auto;
+    width: 20%;
+    height: 350px;
+} section .content .gamepc .pcimage {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+} section .content .gamepc .pcimage img {
+    width: 200px;
+} .content1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} section .content .gamepc a {
+    text-decoration: none;
+    color: #1f1e1e;
+} section .content .gamepc:hover {
+    border-radius: 2px;
+    box-shadow:  0 0 10px #6d6b6b9f;
+    transition: 0.2s;
+} 
+
+/* home media */
+
+ @media screen and (max-width: 900px) {
+    article .articleImage1 {
+        display: none;
+    } article .articleImage2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    section .content .gamepc {
+        width: 32%;
+    } .content1 {
+        justify-content: space-around;
+    } section .content .gamepcs {
+        height: 800px;
+    }
+} 
+
+@media screen and (max-width: 625px) {
+    section .content .gamepcs {
+        margin: 0 auto;
+        width: 270px;
+        height: 1480px;
+    } section .content .gamepcs .content1 {
+        display: flex;
+        flex-direction: column;
+    } section .content .gamepc {
+        width: 100%;
+    } 
+}  
+
+/* inlog  */
+
+.inlogContainer {
+    min-height: 600px;
+    max-width: 440px; 
+    margin: 0 auto;
+    background-color: rgba(211, 211, 211, 0.055);
+    text-align: center;
+    color: #1f1e1e;
+    box-shadow: 0 0 5px #40404085;
+    /* border-radius: 5px; */
+} .inlogContainer .invoerveld {
+    border: solid 1px #404040;
+    width: 300px;
+    height: 25px;
+    border-radius: 2px;
+} .inlogContainer .inlogSubmit {
+    background-color: #404040;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+} .inlogContainer a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #404040;
+}
+
+/* account page */
+.accountscreen {
+display: flex;
+justify-content: space-evenly;
+} .accountContainer {
+    width: 100%;
+    min-height: 800px;
+    text-align: center;
+} .accountnav {
+    display: flex;
+    width: 350px;
+    background-color: #404040;
+} .accountnav li {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    list-style-type: none;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+} .accountnav a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+} .accountnav ul {
+    padding-inline-start: 0;
+} .accountnav li:hover {
+    background-color: #1f1e1e;
+    cursor: pointer;
+    transition: .2s;
+} .accountContainer {
+    color: #1f1e1e;
+} .accountContainer .gegevens {
+    font-weight: bold;
+} .accountContainer .gegevens h1 {
+    padding-bottom: 50px;
+} .accountContainer .gegevens table {
+    font-size: 18px;
+    margin-left: 100px;
+    margin: 0 auto;
+    font-size: 20px;
+} .accountContainer .gegevens table td{
+    padding: 10px;
+} .accountContainer .informatie {
+    display: none;
+    font-weight: bold;
+} .accountContainer .informatie table {
+    font-size: 18px;
+    margin-left: 100px;
+} .accountContainer .bestellingen {
+    display: none;
+} .accountContainer .beveiliging {
+    display: none;
+} .bestellingen section {
+    width: 100%;
+    height: auto;
+    color: #1f1e1e;
+    box-shadow: 0 0 2px #40404085;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}  .accountContainer .invoerveld {
+    border: solid 1px #404040;
+    width: 300px;
+    height: 25px;
+    border-radius: 2px;
+} .accountContainer .inlogSubmit {
+    background-color: #404040;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+} .accountContainer a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+
+@media screen and (max-width: 780px) {
+    .accountnav {
+        width: 150px;
+    } .accountnav li {
+        width: 150px;
+    } .accountContainer {
+        font-size: 12px;
+    } .accountContainer td {
+        font-size: 13px;
+    }
+}
+
+/* samenstellen */
+.samenstellenbanner {
+    background-image: url("../images/samenstellenintro.jpg");
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+} .samenstellenbanner h1 {
+    text-align: center;
+    margin: 0;
+    text-shadow: 2px 2px #1f1e1e;
+    font-size: 40px;
+} .samenstellenbanner p {
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px #1f1e1e;
+} .samenstellenintro {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    width: 100%;
+    height: 300px;
+    background-color: #404040;
+} .samenstellenintro .midden h1 {
+    margin: 0;
+    text-align: center;
+} .samenstellenintro h2 {
+    text-align: center;
+    font-size: 22px;
+} .samenstellenintro .links {
+    background-image: url(../images/cursor.png);
+    background-size: 15%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 100%;
+    width: 33%;
+    padding-inline: 100px;
+} .samenstellenintro .midden {
+    background-image: url(../images/verzenden.png);
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 100%;
+    width: 34%;
+    padding-inline: 100px;
+} .samenstellenintro .rechts {
+    background-image: url(../images/gamen.png);
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 100%;
+    width: 33%;
+    padding-inline: 100px;
+} .samenstellencontainer {
+    width: 100%;
+    height: auto;
+} .samenstellenInfo {
+    width: 100%;
+    height: 50px;
+    background-color: #404040;
+    text-align: center;
+} .samenstellenInfo h1 {
+    margin: 0;
+} .knopbar {
+    width: 100%;
+    height: 115px;
+    background-color: #404040;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} .beginsamenstellenknop {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: gray;
+    text-decoration: none;
+    color: white;   
+    text-shadow: 1px 2px #1f1e1e;
+    font-weight: bold;
+} .beginsamenstellenknop:hover {
+    box-shadow: 6px 6px #1f1e1e;
+    background-color: rgb(109, 106, 106);
+    transition: 0.2s;
+}.samenstellenClass {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+} .samenstellenClass .links {
+    cursor: pointer;
+    width: 58%;
+    height: 100%;
+    background-color: blue;
+    clip-path: polygon(0 0, 100% 0%, 79% 100%, 0% 100%);
+    background-image: url("../images/bluepcFlipped.png");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 1px 1px 50px rgba(0, 0, 255, 0.642);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} .samenstellenClass .rechts {
+    cursor: pointer;
+    width: 58%;
+    height: 100%;
+    background-color: red;
+    clip-path: polygon(21% 0, 100% 0%, 100% 100%, 0% 100%);
+    margin-left: -220px;
+    background-image: url("../images/redpc.png");
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 1px 1px 50px rgba(255, 0, 0, 0.637);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} .samenstellenClass .links img {
+    width: 50%;
+    opacity: 0.9;
+} .samenstellenClass .rechts img {
+    width: 70%;
+    opacity: 0.9;
+} .samenstellenClass .links:hover {
+    box-shadow: inset 1px 1px 400px rgba(0, 0, 255, 0.642);
+    background-position: top;
+    transition: 0.4s;
+} .samenstellenClass .rechts:hover {
+    box-shadow: inset 1px 1px 400px rgba(255, 0, 0, 0.637);
+    background-position: bottom;
+    transition: 0.4s;
+} .samenstellenClassInfo {
+    width: 100%;
+    height: 100px;
+    background-color: #404040;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    display: none;
+} .samenstellenDiv {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    display: none;
+}  .samenstellenSelectie {
+    padding: 10px;
+    flex: 0 0 auto;
+    width: 20%;
+    height: 350px;
+} .samenstellenSelectie .pcimage {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+} .samenstellenSelectie .pcimage img {
+    width: 100%;
+    justify-self: center;
+} .samenstellenSelectie a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #1f1e1e;
+} .samenstellenSelectie:hover {
+    cursor: pointer;
+    border-radius: 2px;
+    box-shadow:  0 0 10px #6d6b6b9f;
+    transition: 0.2s;
+} .verdernav {
+    width: 100%;
+    height: 115px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+} .verdernavbutton {
+    cursor: pointer;
+    border-radius: 10px;
+    border: 0;
+    padding: 10px;
+    background-color: #404040   ;
+    text-decoration: none;
+    color: white;   
+    text-shadow: 1px 2px #1f1e1e;
+    font-weight: bold;
+} .selected {
+    box-shadow: 0 0 10px green;
+} .none {
+    display: none;
+} #amdProcessors {
+    display: none;
+} #intelProcessors {
+    display: none;
+}
+
+/* samenstellen media */
+
+@media screen and (max-width: 1835px) {
+    .samenstellenClass .rechts {
+        margin-left: -220px;
+    }
+}  @media screen and (max-width: 1387px) {
+    .samenstellenClass .rechts {
+        margin-left: -200px;
+    }
+} @media screen and (max-width: 1260px) {
+    .samenstellenClass .rechts {
+        margin-left: -180px;
+    } .samenstellenintro p {
+        font-size: 12px;
+    }
+} @media screen and (max-width: 1135px) {
+    .samenstellenClass .rechts {
+        margin-left: -160px;
+    }
+}  @media screen and (max-width: 1010px) {
+    .samenstellenClass .rechts {
+        margin-left: -140px;
+    } .samenstellenintro .links {
+        padding-inline: 75px;
+    } .samenstellenintro .midden {
+        padding-inline: 75px;
+    } .samenstellenintro .rechts {
+        padding-inline: 75px;
+    } .samenstellenDiv {
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 80%;
+        height: 800px;
+        margin: 0 auto;
+    } .samenstellenSelectie {
+        width: 45%;
+    } .samenstellenSelectie .pcimage img {
+        width: 100%;
+    }
+}  @media screen and (max-width: 888px) {
+    .samenstellenClass .rechts {
+        margin-left: -120px;
+    }
+}  @media screen and (max-width: 768px) {
+    .samenstellenClass .rechts {
+        margin-left: -100px;
+    } .samenstellenintro .links {
+        padding-inline: 50px;
+    } .samenstellenintro .midden {
+        padding-inline: 50px;
+    } .samenstellenintro .rechts {
+        padding-inline: 50px;
+    } .samenstellenSelectie .pcimage img {
+        width: 80%;
+    }
+}  @media screen and (max-width: 635px) {
+    .samenstellenClass .rechts {
+        margin-left: -80px;
+    } .samenstellenintro .links {
+        padding-inline: 25px;
+    } .samenstellenintro .midden {
+        padding-inline: 25px;
+    } .samenstellenintro .rechts {
+        padding-inline: 25px;
+    }
+}  @media screen and (max-width: 508px) {
+    .samenstellenClass .rechts {
+        margin-left: -60px;
+    }
+}
+
+/* winkelmantje */
+.winkelmantjeContainer {
+    width: 100%;
+    min-height: 800px;
+    display: flex;
+    justify-content: center;
+} .winkelmantjeContainer .innerContainer {
+    display: flex;
+    width: 440px;
+    min-height: 800px;
+    flex-direction: column;
+    box-shadow: 0 0 5px #40404085;
+} .winkelmantjeContainer .innerContainer header {
+    color: #1f1e1e;
+    margin: 0 auto;
+}  .winkelmantjeContainer .innerContainer section {
+    border: solid 1px #40404015;
+    width: 100%;
+    height: 100px;
+    color: #1f1e1e;
+} .winkelmantjeContainer .innerContainer section p {
+    margin: 10px;
+} .winkelmantjeContainer .innerContainer .imgDiv {
+    height: 100%;
+    width: 100px;
+    display: flex;
+    float: right;
+    justify-content: center;
+    align-items: center;
+} .winkelmantjeContainer .innerContainer section .imgDiv img {
+    width: 80%;
+} .winkelmantjeContainer .innerContainer section .verderMetBestellenButton {
+    display: flex;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 0;
+    padding: 10px;
+    background-color: #404040   ;
+    text-decoration: none;
+    color: white;   
+    text-shadow: 1px 2px #1f1e1e;
+    font-weight: bold;
+    margin-right: 10px;
+} .winkelmantjeContainer .innerContainer nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1f1e1e;
+    margin-top: 200px;
+}
